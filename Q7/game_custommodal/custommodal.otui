@@ -1,0 +1,15 @@
+MainWindow
+  id: mainWindow
+  !text: tr('Custom Modal')
+  size: 400 400
+
+  @onEscape: modules.game_custommodal.cancel()
+
+  Button
+    id: jumpButton
+    !text: tr('Jump!')
+    width: 64
+    anchors.right: next.left
+    anchors.top: next.top
+    margin-right: 5
+    @onClick: modules.game_custommodal.jump()

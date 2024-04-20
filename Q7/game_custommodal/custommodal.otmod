@@ -1,0 +1,9 @@
+Module
+  name: game_custommodal
+  description: Manage client hotkeys
+  author: andrefaramir, BeniS
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ custommodal ]
+  @onLoad: init()
+  @onUnload: terminate()
